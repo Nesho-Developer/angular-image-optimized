@@ -1,16 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {
+  NgOptimizedImage,
+  provideImgixLoader,
+  provideCloudflareLoader,
+  provideCloudinaryLoader,
+  provideImageKitLoader
+} from '@angular/common';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgOptimizedImage],
+  providers: [
+    // provideImgixLoader('http://localhost:4200', { ensurePreconnect: true }),
+    // provideCloudflareLoader('http://localhost:4200'),
+    // provideCloudinaryLoader('http://localhost:4200'),
+    // provideImageKitLoader('http://localhost:4200'),
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
