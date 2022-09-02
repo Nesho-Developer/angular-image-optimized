@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
   declarations: [AppComponent],
   imports: [BrowserModule, NgOptimizedImage],
   providers: [
-    // provideImgixLoader('http://localhost:4200', { ensurePreconnect: true }),
+    // provideImgixLoader('https://assets.imgix.net/', { ensurePreconnect: true }),
     // provideCloudflareLoader('http://localhost:4200'),
     // provideCloudinaryLoader('http://localhost:4200'),
     // provideImageKitLoader('http://localhost:4200'),
